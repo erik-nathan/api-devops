@@ -3,6 +3,7 @@ from flask import Flask
 from flask_restful import Api
 from aplication.resources.healthcheck_resource import HealthcheckResource
 from aplication.resources.hostname_resource import HostnameResorce
+from aplication.resources.monitoring_resources.monitoring_system_resource import MonitoringResource
 
 
 def create_app():
@@ -16,5 +17,6 @@ def create_app():
 
     api.add_resource(HealthcheckResource, '/healthcheck')
     api.add_resource(HostnameResorce, '/hostname')
+    api.add_resource(MonitoringResource, '/monitoring')
 
     return app
