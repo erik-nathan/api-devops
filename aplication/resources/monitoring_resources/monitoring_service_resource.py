@@ -4,9 +4,9 @@ from aplication.models.monitoring_models.monitoring_services_models import check
 class MonitoringServiceResource(Resource):
     def get(self):
         urls = [
-            "jira-isi.pe.senai.br",
-            "jenkins.isitics.com",
-            "api.dev.mouralock.isitics.com"
+            "facebook.com",
+            "google.com",
+            "github.com"
         ]
         results = []
         for url in urls:
